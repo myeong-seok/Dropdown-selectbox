@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container {
+    width: 240px;
+    height: 40px;
+    margin: 71px auto;
+}
+
+button{
+    position: relative;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+button::after {
+    background: url(./img/Polygon\ 1.png) no-repeat 8px 5px;  
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 18px;  
+    margin: 0 0 0 40px;  
+}
+
+button:hover {
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button:focus {
+    width: 202px;
+    height: 42px;
+    border: 3px solid #F8E4FF;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+ul {
+    width: 200px;
+    height: 208px;
+    margin-top: 9px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+li{ 
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover {
+    width: 184px;
+    height: 30px;
+    background: #F8E4FF;
+    border-radius: 8px;
+}
+
+
