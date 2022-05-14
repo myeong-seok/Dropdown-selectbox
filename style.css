@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-li {
+.dropdown-item {
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -21,7 +21,7 @@ li {
     margin: 71px auto;
 }
 
-button{
+.dropdown-toggle{
     position: relative;
     padding: 0;
     width: 200px;
@@ -38,7 +38,24 @@ button{
     cursor: pointer;
 }
 
-button::after {
+.dropdown-option {
+    position: relative;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
     background: url(./img/Polygon\ 1.png) no-repeat 8px 5px;  
     content: "";
     display: inline-block;
@@ -47,7 +64,7 @@ button::after {
     margin: 0 0 0 40px;  
 }
 
-button:hover {
+.dropdown-toggle:hover {
     width: 200px;
     height: 40px;
     background: #FFFFFF;
@@ -56,7 +73,7 @@ button:hover {
     border-radius: 10px;
 }
 
-button:focus {
+.dropdown-toggle:focus {
     width: 202px;
     height: 42px;
     border: 3px solid #F8E4FF;
@@ -65,13 +82,13 @@ button:focus {
     line-height: 16px;
 }
 
-button:focus + ul{
+.dropdown-toggle:focus + ul{
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
 }
 
-ul {
+.dropdown-menu {
     width: 200px;
     height: 208px;
     margin-top: 9px;
@@ -87,12 +104,11 @@ ul {
     flex-direction: column;
     cursor: pointer;
     opacity: 0;
-    pointer-events: none;
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
 
-li{ 
+.dropdown-item{ 
     text-align: center;
     width: 200px;
     height: 40px;
@@ -101,11 +117,10 @@ li{
     justify-content: center;
 }
 
-li:hover {
+.dropdown-item:hover {
     width: 184px;
     height: 30px;
     background: #F8E4FF;
     border-radius: 8px;
 }
-
 
